@@ -40,21 +40,6 @@ namespace ASP_3_Lesson.Controllers
         public IActionResult Update(ProductUpdateViewModel vm)
         {
             _productService.Update(vm.Product);
-            //myid -= 1;
-            //for (int i = 0; i < Products.Count; i++)
-            //{
-            //    if (Products[i].Id == vm.Product.Id)
-            //    {
-            //        myid = Products[i].Id;
-            //        break;
-            //    }
-            //}
-            //var prod = Products[myid];
-            //prod.Price = vm.Product.Price;
-            //prod.Name = vm.Product.Name;
-            //prod.Category = vm.Product.Category;
-            //prod.Discount = vm.Product.Discount;
-            //prod.ImagePath = vm.Product.ImagePath;
             return RedirectToAction("Index", "Product");
         }
 
